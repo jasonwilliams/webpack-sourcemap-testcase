@@ -1,5 +1,9 @@
 # Reproduction Steps
 
+This attempts to reproduce https://github.com/vercel/next.js/issues/15823
+
+It uses a similar base config to https://github.com/vercel/next.js/blob/7ce000b328305737099549bc186ddd3a39a2528b/packages/next/build/webpack/config/blocks/base.ts
+
 - Run npx webpack
 - open up dist/main.js
 - Inspect the base64 from the sourceMappingURL, it seems to have the correct path
